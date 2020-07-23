@@ -179,6 +179,7 @@ h4, h5{
 }
 
 
+
 /* Media Query: Desktop */
 
 @media only screen and (min-width: 880px){
@@ -193,6 +194,8 @@ h4, h5{
         display: flex;
     }
 
+    /* Article Image */ 
+
     .drawers-box{
         width: 40%;
         height: 100%;
@@ -202,6 +205,8 @@ h4, h5{
         height: 100%;
         max-width: 150%;
     }
+
+    /* Article Info */
 
     article{
         width: 60%;
@@ -213,10 +218,14 @@ h4, h5{
         margin-bottom: 15px;
     }
 
+    /* Author Section */
+
     .icon-share{
         position: absolute;
         right: 6%;
     }
+
+    /* Share Tooltip */
 
     .share-tooltip{
         position: absolute;
@@ -243,6 +252,8 @@ h4, h5{
         padding-left: 12px;
         margin: 0 auto;
     }
+
+    /* Footer */
 
     .attribution{
         margin-top: 20rem;
