@@ -2,8 +2,6 @@
 
 ![Design preview for the Article preview component coding challenge](./design/desktop-preview.jpg)
 
-See my solution live [live](https://projects-and-challenges.vercel.app/article-preview-component-master/index.html).
-
 # Front-end Style Guide
 
 ## Layout
@@ -30,3 +28,7 @@ The designs were created to the following widths:
 
 - Family: [Manrope](https://fonts.google.com/specimen/Manrope)
 - Weights: 500, 700
+
+
+
+See my solution [live](https://projects-and-challenges.vercel.app/article-preview-component-master/index.html).
