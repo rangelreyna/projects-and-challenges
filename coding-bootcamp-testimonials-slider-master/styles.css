@@ -1,0 +1,224 @@
+/* CSS DESIGNED FOR MOBILE FIRST + DESKTOP MEDIA QUERY */ 
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap');
+
+/* var(--primary-color) */
+:root{
+    --primary-color: hsl(240, 38%, 20%);
+    --secondary-color: hsl(240, 18%, 77%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+    background-image: url(./images/pattern-curve.svg);
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-size: 375px;
+}
+
+.testimonial{
+    width: 88%;
+    min-width: 330px;
+    max-width: 550px;
+    margin: 2rem auto;
+}
+
+/* Image Section */
+
+.img-background{
+    width: 100%;
+    padding: 15% 0;
+    background-image: url(./images/pattern-bg.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+
+.img-container{
+    margin: 0 auto;
+    width: 77%;
+    padding-top: 77%;
+    border-radius: 5px;
+    background-image: url(./images/image-tanya.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 40px 60px -40px var(--primary-color);
+    position: relative;
+}
+
+.slider-buttons{
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-top: -20px;
+    margin-left: -40px;
+    width: 80px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #fff;
+    overflow: hidden;
+    display: flex;
+}
+
+.slider-buttons > div{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider-buttons > div > img{
+    width: 10px;
+    height: 14px;
+}
+
+.left-button:hover{
+    cursor: pointer;
+}
+
+.right-button:hover{
+    cursor: pointer;
+}
+
+/* Quote Section */
+
+.quote-container{
+    position: relative;
+}
+
+.quote-pattern{
+    width: 60px;
+    height: 50px;
+    position: absolute;
+    left: 50%;
+    margin-left: -30px;
+}
+
+.testimonial-text{
+    margin: 0 3%;
+    padding-top: 25px;
+    text-align: center;
+    color: var(--primary-color);
+}
+
+.quote{
+    font-size: 1.1rem;
+    font-weight: 300;
+    line-height: 1.3;
+}
+
+.person-info{
+    margin-top: 25px;
+}
+
+.name{
+    font-size: 1rem;
+}
+
+.title{
+    color: var(--secondary-color);
+    font-size: 0.9rem;
+}
+
+.second{
+    display: none;
+}
+
+/* Footer */
+
+.attribution{
+    margin-top: 5rem;
+    margin-bottom: 1.5rem;
+    font-size: 11px;
+    text-align: center;
+    color: var(--primary-color);
+}
+
+.attribution a{
+    color: hsl(228, 45%, 44%);
+}
+
+
+
+/* Media Query: Desktop */
+
+@media only screen and (min-width: 1150px){
+    body{
+        background-size: 600px;
+    }
+    
+    .testimonial{
+        width: 90%;
+        min-width: 1150px;
+        max-width: 1440px;
+        margin: 2rem auto;
+        position: relative;
+    }
+    
+    /* Image Section */
+
+    .img-wrapper{
+        margin-left: auto;
+        width: 53%;
+    }
+    
+    .slider-buttons{
+        left: 20%;
+        margin-top: -30px;
+        width: 120px;
+        height: 60px;
+        border-radius: 30px;
+    }
+    
+    .slider-buttons > div > img{
+        width: 15px;
+        height: 19px;
+    }
+    
+    /* Quote Section */
+    
+    .quote-container{
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 53%;
+        margin-top: 15%;
+        margin-left: 6%;
+    }
+    
+    .quote-pattern{
+        width: 120px;
+        height: 100px;
+        left: 22%;
+    }
+    
+    .testimonial-text{
+        padding-top: 65px;
+        text-align: left;
+    }
+    
+    .quote{
+        font-size: 2rem;
+    }
+    
+    .person-info{
+        margin-top: 40px;
+        display: flex;
+        align-items: center;
+    }
+    
+    .name{
+        font-size: 1.3rem;
+    }
+    
+    .title{
+        margin-left: 10px;
+        font-size: 1.2rem;
+    }
+}
