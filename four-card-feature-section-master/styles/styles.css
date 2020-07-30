@@ -1,0 +1,177 @@
+/* CSS DESIGNED FOR MOBILE FIRST + DESKTOP MEDIA QUERY */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #fafafa;
+}
+
+/* Header */
+header {
+  width: 82%;
+  min-width: 300px;
+  max-width: 520px;
+  margin: 80px auto;
+  text-align: center;
+}
+
+header h1 {
+  color: #4c4e61;
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+header h1 span {
+  font-weight: 200;
+}
+
+header p {
+  color: #a3a5ae;
+  font-size: 0.9rem;
+  line-height: 1.7;
+}
+
+/* Feature Section */
+main {
+  width: 82%;
+  min-width: 310px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+main .card {
+  background-color: white;
+  border-radius: 8px;
+  -webkit-box-shadow: 0 10px 35px -15px #a3a5ae;
+          box-shadow: 0 10px 35px -15px #a3a5ae;
+  margin-bottom: 30px;
+  position: relative;
+  overflow: hidden;
+}
+
+main .card .content-box {
+  width: 82%;
+  margin: 0 auto;
+  padding: 25px;
+}
+
+main .card .content-box .title {
+  color: #4c4e61;
+  font-size: 1.2rem;
+}
+
+main .card .content-box .content {
+  color: #a3a5ae;
+  margin-top: 7px;
+  margin-bottom: 35px;
+  font-size: 0.8rem;
+  line-height: 1.7;
+}
+
+main .card .content-box .icon {
+  display: block;
+  width: 60px;
+  margin-left: auto;
+}
+
+main .card::after {
+  content: '';
+  background-color: #aaa;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 4px;
+}
+
+.cyan.card::after {
+  background-color: #45d3d3;
+}
+
+.red.card::after {
+  background-color: #ea5353;
+}
+
+.orange.card::after {
+  background-color: #fcaf4a;
+}
+
+.blue.card::after {
+  background-color: #549ef2;
+}
+
+/* Footer */
+.attribution {
+  margin-top: 5rem;
+  margin-bottom: 1.5rem;
+  font-size: 11px;
+  text-align: center;
+  color: #4c4e61;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+
+/* Media Query: Desktop */
+@media only screen and (min-width: 1100px) {
+  /* Header */
+  header {
+    max-width: 540px;
+    margin-bottom: 65px;
+  }
+  header h1 {
+    font-size: 2.4rem;
+  }
+  header p {
+    font-size: 1rem;
+  }
+  /* Feature Section */
+  main {
+    max-width: 1120px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: (1fr)[4];
+    -ms-grid-columns: (1fr)[3];
+        grid-template: repeat(4, 1fr)/repeat(3, 1fr);
+        grid-template-areas: ". team ." "supervisor team calculator" "supervisor karma calculator" ". karma .";
+    grid-column-gap: 30px;
+  }
+  main .cyan {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 1;
+    grid-area: supervisor;
+  }
+  main .red {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 2;
+    grid-area: team;
+  }
+  main .orange {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 2;
+    grid-area: karma;
+  }
+  main .blue {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 3;
+    grid-area: calculator;
+  }
+  main .card .content-box {
+    padding: 30px;
+  }
+  main .card .content-box .title {
+    font-size: 1.3rem;
+  }
+  main .card .content-box .content {
+    font-size: 0.9rem;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
