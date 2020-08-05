@@ -1,0 +1,251 @@
+/* CSS DESIGNED FOR MOBILE FIRST + DESKTOP MEDIA QUERY */
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*:focus {
+  outline: none;
+}
+
+body {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 16px;
+  background: linear-gradient(135deg, white, #fff5f5);
+}
+
+/* Content Section */
+.logo-container {
+  width: 83%;
+  max-width: 650px;
+  margin: 30px auto;
+}
+
+.logo-container .logo {
+  width: 100px;
+}
+
+.hero-mobile {
+  width: 100%;
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+.hero-mobile img {
+  min-width: 100%;
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+section {
+  width: 83%;
+  max-width: 650px;
+  margin: 60px auto 0 auto;
+  text-align: center;
+  color: #ce9797;
+}
+
+section h1 {
+  margin-bottom: 25px;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 2.5rem;
+  letter-spacing: 0.25em;
+}
+
+section h1 span {
+  font-weight: 600;
+  color: #413a3a;
+}
+
+section p {
+  margin-bottom: 35px;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+/* Form */
+form {
+  position: relative;
+  max-width: 440px;
+  margin: 0 auto;
+}
+
+form #email {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  height: 50px;
+  padding-left: 25px;
+  background-color: transparent;
+  border: 1px solid rgba(206, 151, 151, 0.6);
+  border-radius: 25px;
+  color: #413a3a;
+}
+
+form #email:hover, form #email:focus {
+  border-color: #ce9797;
+}
+
+form #email::-webkit-input-placeholder {
+  color: rgba(206, 151, 151, 0.6);
+}
+
+form #email:-ms-input-placeholder {
+  color: rgba(206, 151, 151, 0.6);
+}
+
+form #email::-ms-input-placeholder {
+  color: rgba(206, 151, 151, 0.6);
+}
+
+form #email::placeholder {
+  color: rgba(206, 151, 151, 0.6);
+}
+
+form #email.error {
+  border: 2px solid #f96262;
+}
+
+form .error-icon {
+  position: absolute;
+  top: 25%;
+  right: 75px;
+  visibility: hidden;
+}
+
+form .submit-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 65px;
+  height: 50px;
+  border: none;
+  border-radius: 25px;
+  background: linear-gradient(135deg, #f8bfbf, #ee8c8c);
+  -webkit-box-shadow: 0 13px 35px -5px #ce9797;
+          box-shadow: 0 13px 35px -5px #ce9797;
+}
+
+form .submit-btn:hover {
+  cursor: pointer;
+  background: #f8bfbf;
+  -webkit-box-shadow: 0 13px 20px -5px #ce9797;
+          box-shadow: 0 13px 20px -5px #ce9797;
+}
+
+form .tooltip {
+  position: absolute;
+  top: 100%;
+  left: 25px;
+  margin-top: 10px;
+  text-align: left;
+  font-size: 0.9rem;
+}
+
+form .tooltip.error {
+  color: #f96262;
+}
+
+form .tooltip.success {
+  color: #413a3a;
+}
+
+/* Desktop Image */
+.hero-desktop {
+  display: none;
+}
+
+/* Footer */
+.attribution {
+  margin-top: 5rem;
+  padding: 1rem 0;
+  font-size: 11px;
+  text-align: center;
+  color: #413a3a;
+  border-top: 1px solid #ce9797;
+  background-color: #efdcdc;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+
+/* Media Query: Desktop */
+@media only screen and (min-width: 1000px) {
+  /* Content Section */
+  .wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .wrapper .content-box {
+    width: 58%;
+    background-image: url(../images/bg-pattern-desktop.svg);
+  }
+  .wrapper .content-box .logo-container {
+    width: 60%;
+    margin-top: 65px;
+    margin-bottom: 130px;
+  }
+  .wrapper .content-box .logo-container .logo {
+    width: 160px;
+  }
+  .wrapper .content-box .hero-mobile {
+    display: none;
+  }
+  .wrapper .content-box section {
+    width: 60%;
+    text-align: left;
+  }
+  .wrapper .content-box section h1 {
+    font-size: 4rem;
+    line-height: 1.1;
+  }
+  .wrapper .content-box section p {
+    max-width: 450px;
+    margin-bottom: 40px;
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+  /* Form */
+  form {
+    margin: unset;
+  }
+  form #email {
+    height: 55px;
+    padding-left: 30px;
+    border-radius: 28px;
+    font-size: 0.9rem;
+  }
+  form .error-icon {
+    right: 115px;
+  }
+  form .submit-btn {
+    width: 100px;
+    height: 55px;
+    border-radius: 28px;
+    -webkit-box-shadow: 0 13px 35px -8px #ce9797;
+            box-shadow: 0 13px 35px -8px #ce9797;
+  }
+  form .tooltip {
+    left: 30px;
+  }
+  /* Desktop Image */
+  .hero-desktop {
+    display: block;
+    width: 42%;
+    height: 800px;
+    background: url(../images/hero-desktop.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  /* Footer */
+  .attribution {
+    margin-top: 0;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
