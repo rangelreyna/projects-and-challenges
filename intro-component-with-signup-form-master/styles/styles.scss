@@ -1,0 +1,249 @@
+/* CSS DESIGNED FOR MOBILE FIRST + DESKTOP MEDIA QUERY */ 
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+$primary_color: hsl(0, 100%, 74%);
+$accent-color: hsl(248, 32%, 49%);
+$neutral-color: hsl(246, 25%, 77%);
+$field-text-color: hsl(249, 10%, 26%);
+$submit-color: hsl(154, 59%, 51%); 
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+*:focus{
+    outline: none;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    background-color: $primary_color;
+    background-image: url(../images/bg-intro-mobile.png);
+    background-size: cover;
+}
+
+/* Text Container */
+
+.text-container{
+    width: 87%;
+    max-width: 700px;
+    margin: 90px auto 65px auto;
+    text-align: center;
+    color: #fff;
+    h1{
+        margin-bottom: 20px;
+        font-size: 1.7rem;
+        line-height: 1.4;
+    }
+    p{
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+}
+
+/* Promo Banner & Form Structure */ 
+
+.form-container{
+    width: 87%;
+    max-width: 600px;
+    margin: 0 auto;
+    .promo-banner{
+        margin-bottom: 25px;
+        padding: 20px 70px;
+        border-radius: 10px;
+        background-color: $accent-color;
+        color: #fff;
+        text-align: center;
+        box-shadow: 0 7px transparentize($field-text-color, 0.75);
+        .promo{
+            font-size: 1rem;
+            span{
+                font-weight: 700;
+            }
+        }
+    }
+    #form{
+        background-color: #fff;
+        padding: 25px;
+        border-radius: 10px;
+        box-shadow: 0 7px transparentize($field-text-color, 0.75);
+        ul{
+            list-style-type: none;
+        }
+    }
+}
+
+/* Fields Structure */ 
+
+.field-container{
+    position: relative;
+    margin-bottom: 15px;
+    input{
+        box-sizing: border-box;
+        width: 100%;
+        height: 55px;
+        padding-left: 20px;
+        background-color: transparent;
+        border: 1px solid transparentize($field-text-color, 0.8);
+        border-radius: 5px;
+        color: $field-text-color;
+        font-family: inherit;
+        font-size: 0.9rem;
+        font-weight: 700;
+        transition: border-color 0.3s;
+        &:hover, &:focus{
+            border-color: $accent-color;
+        }
+        &::placeholder{
+            color: transparentize($field-text-color, 0.4);
+        }
+    }
+    .error-icon{
+        position: absolute;
+        right: 30px; 
+        top: 15px;
+        visibility: hidden;
+    }
+    .error-msg{
+        display: none;
+        padding-top: 5px;
+        color: $primary_color;
+        text-align: right;
+        font-size: 0.8rem;
+    }
+    &.error input{
+        color: $primary_color;
+        border: 2px solid $primary_color; 
+    }
+    &.error .error-icon{
+        visibility: visible;
+    }
+    &.error .error-msg{
+        display: block;
+    }
+    &.clear input::placeholder{
+        opacity: 0;
+    }
+}
+
+/* Form Submit Button & Terms */ 
+
+.submit-btn{
+    width: 100%;
+    height: 53px;
+    padding-top: 5px;
+    background-color: $submit-color;
+    color: #fff;
+    border: 1px solid darken($submit-color, 6%);
+    border-radius: 5px;
+    box-shadow: 0 3px darken($submit-color, 6%);
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    transition: opacity 0.3s;
+    &:hover{
+        cursor: pointer;
+        opacity: 0.8; 
+    }
+}
+
+.terms{
+    padding: 15px 15px 0 15px;
+    color: $neutral-color;
+    text-align: center;
+    font-size: 0.7rem;
+    font-weight: 500;
+    a{
+        text-decoration: none;
+        color: $primary_color;
+        font-weight: 700;
+    }
+}
+
+/* Footer */ 
+
+.attribution{
+    margin-top: 5rem;
+    padding: 1rem 0;
+    font-size: 11px;
+    text-align: center;
+    color: $accent-color;
+    border-top: 1px solid $accent-color;
+    background-color: lighten($accent-color, 20%);
+    a{
+        color: hsl(228, 45%, 44%);
+    }
+}
+
+
+/* Media Query: Desktop */
+
+@media only screen and (min-width: 1000px){
+
+    body{
+        background-image: url(../images/bg-intro-desktop.png);
+    }
+
+    /* Centering Content */ 
+
+    html, body{
+        height: 100%; 
+        min-height: 680px;
+    }
+
+    .main{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .wrapper{
+            width: 77%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+
+    /* Text Container */
+
+    .text-container{
+        width: 46%;
+        margin: 0; 
+        text-align: left;
+        h1{
+            margin-bottom: 25px; 
+            font-size: 3rem; 
+            line-height: 1.1; 
+        }
+    }
+
+    /* Form Structure */ 
+
+    .form-container{
+        width: 48%; 
+        margin: 0; 
+        #form{
+            padding: 40px;
+        }
+    }
+
+    /* Fields Structure */ 
+
+    .field-container{
+        margin-bottom: 20px;
+        input{
+            padding-left: 30px;
+        }
+    }
+
+    /* Footer */ 
+
+    .attribution{
+        margin-top: 0; 
+    }
+}
