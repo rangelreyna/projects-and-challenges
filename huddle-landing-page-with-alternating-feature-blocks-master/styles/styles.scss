@@ -1,0 +1,446 @@
+/* CSS DESIGNED FOR MOBILE FIRST + DESKTOP MEDIA QUERY */ 
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap'); // headings 
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap'); // body & call-to-actions
+
+$primary_color: hsl(192, 100%, 9%);
+$secondary_color: hsl(193, 100%, 96%);
+$accent_color: hsl(322, 100%, 66%); 
+$neutral_color: hsl(208, 11%, 55%);
+$page_width: 90%;
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-family: 'Open Sans', sans-serif; 
+    font-size: 18px;
+}
+
+h1, h2, h3{
+    font-family: 'Poppins', sans-serif; 
+}
+
+button{
+    border: none;
+    border-radius: 40px;
+    font-family: inherit;
+    font-weight: 700;
+    box-shadow: 0 5px 15px transparentize($neutral_color, 0.8);
+    padding-bottom: 2px;
+    transition: background-color 0.3s;
+    &:focus{
+        outline: none;
+    }
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+a{
+    text-decoration: none;
+}
+
+
+/* HEADER */ 
+
+.jumbotron{
+    padding-top: 30px;
+    padding-bottom: 35px;
+    background-color: $secondary_color;
+    background-image: linear-gradient(45deg, hsla(0, 0%, 100%, 0) 50%, $secondary_color), url(../images/bg-hero-mobile.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+nav{
+    width: $page_width;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .logo{
+        width: 100px;
+        height: auto;
+    }
+    .nav-btn{
+        width: 100px;
+        height: 25px;
+        background-color: #fff;
+        color: $primary_color;
+        font-size: 0.6rem;
+        transition: color 0.3s;
+        &:hover{
+            color: $accent_color;
+        }
+    }
+}
+
+.jumbo-container{
+    width: $page_width;
+    margin: 0 auto;
+    section{
+        max-width: 600px;
+        margin: 0 auto;
+        padding-top: 80px;
+        padding-bottom: 60px;
+        text-align: center;
+        color: $primary_color;
+        h1{
+            padding: 0 30px; 
+            font-size: 1.4rem;
+        }
+        p{
+            padding: 30px 15px;
+            font-size: 0.9rem;
+            line-height: 1.5;
+        }
+        .jumbo-btn{
+            width: 240px;
+            height: 40px;
+            background-color: $accent_color;
+            color: #fff;
+            font-size: 0.7rem;
+            &:hover{
+                background-color: lighten($accent_color, 10%);
+            }
+        }
+    }
+    img{
+        width: 300px;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+
+/* MAIN */ 
+
+main{
+    padding-top: 15px;
+    padding-bottom: 180px;
+    background-color: #fff;
+    .main-container{
+        width: $page_width;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+}
+
+.card{
+    margin: 40px 0; 
+    padding: 50px 35px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px transparentize($neutral_color, 0.8);
+    text-align: center;
+    img{
+        width: 235px;
+        height: auto;
+    }
+    section{
+        padding-top: 50px;
+        h3{
+            color: $primary_color;
+            font-size: 1.2rem; 
+        }
+        p{
+            padding-top: 15px;
+            color: $neutral_color;
+            font-size: 0.8rem;
+            line-height: 1.5;
+        }
+    }
+}
+
+
+/* FOOTER */ 
+
+.promo-banner{
+    box-sizing: border-box;
+    width: 350px;
+    padding: 40px 20px;
+    position: absolute;
+    top: -110px;
+    left: 50%;
+    margin-left: -175px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px transparentize($neutral_color, 0.8);
+    background-color: #fff;
+    text-align: center;
+    h2{
+        margin-bottom: 20px;
+        color: $primary_color;
+        font-size: 1rem;
+    }
+    .promo-btn{
+        width: 200px;
+        height: 40px;
+        background-color: $accent_color;
+        color: #fff;
+        font-size: 0.6rem;
+        &:hover{
+            background-color: lighten($accent_color, 10%);
+        }
+    }
+}
+
+.footer{
+    position: relative;
+    padding-top: 130px;
+    padding-bottom: 45px;
+    background-color: $primary_color;
+    .footer-container{
+        width: $page_width;
+        margin: 0 auto;
+    }
+}
+
+.logo-container svg{
+    width: 165px;
+    height: 27px;
+}
+
+.contact{
+    padding-top: 25px;
+    padding-bottom: 50px;
+    .contact-field{
+        display: flex;
+        .icon{
+            width: 35px;
+        }
+        &:first-child .icon{
+            padding-top: 5px;
+        }
+        a{
+            max-width: 285px;
+            color: #fff;
+            font-size: 0.85rem;
+            line-height: 1.6;
+        }
+        &:not(:last-child){
+            padding-bottom: 15px;
+        }
+    }
+}
+
+.link-group a{
+    display: table;
+    margin-bottom: 15px;
+    color: #fff;
+    font-size: 0.9rem;
+}
+
+.social{
+    padding-top: 30px;
+    padding-bottom: 20px;
+    text-align: center;
+    a{
+        position: relative;
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        border: 1px solid #fff;
+        border-radius: 100%;
+        margin: 0 5px;
+        color: #fff;
+        i{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 0.8rem;
+        }
+    }
+}
+
+.copyright{
+    text-align: center;
+    font-size: 0.7rem;
+    color: #fff;
+}
+
+
+/* ATTRIBUTION */ 
+
+.attribution{
+    padding: 0.7rem 0;
+    font-size: 11px;
+    text-align: center;
+    color: $primary_color;
+    border-top: 1px solid $secondary_color;
+    background-color: lighten($secondary_color, 20%);
+    a{
+        color: hsl(228, 45%, 44%);
+    }
+}
+
+
+
+/* Media Query: Desktop */
+
+@media only screen and (min-width: 1000px){
+    /* HEADER */ 
+
+    .jumbotron{ 
+        padding-top: 50px;
+        padding-bottom: 70px; 
+        background-image: url(../images/bg-hero-desktop.svg);
+    }
+
+    nav{
+        .logo{
+            width: 200px;
+        }
+        .nav-btn{
+            width: 200px;
+            height: 50px;
+            font-size: 0.8rem;
+        }
+    }
+
+    .jumbo-container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 65px;
+        section{
+            width: 41%; 
+            padding-top: 10px; 
+            padding-bottom: unset;
+            text-align: left;
+            h1{
+                padding: unset; 
+                padding-right: 50px;
+                font-size: 2.2rem;
+                line-height: 1.5;
+            }
+            p{
+                padding: 30px 0;
+                font-size: 1rem;
+            }
+            .jumbo-btn{
+                width: 280px;
+                height: 55px;
+                font-size: 0.8rem;
+            }
+        }
+        figure{
+            width: 54%; 
+            img{
+                width: 100%; 
+            }
+        }
+    }
+
+
+    /* MAIN */ 
+
+    main{ 
+        padding-top: 120px;
+        padding-bottom: 300px;
+        .main-container{
+            max-width: 1400px;
+        }
+    }
+
+    .card{
+        margin: 40px 20px; 
+        padding: 55px 30px 55px 125px; 
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: left; 
+        img{
+            width: 410px; 
+        }
+        section{
+            width: 47%; 
+            padding-top: unset; 
+            h3{
+                font-size: 1.6rem; 
+            }
+            p{
+                font-size: 1rem; 
+            }
+        }
+        &:nth-child(odd) img{
+            order: 2;
+            padding-left: 50px;
+        }
+        &:nth-child(even) section{
+            padding-left: 50px;
+        }
+    }
+
+
+    /* FOOTER */ 
+
+    .promo-banner{
+        width: 800px;
+        padding: 50px 70px;
+        top: -180px;
+        margin-left: -400px;
+        h2{
+            margin-bottom: 30px; 
+            font-size: 1.7rem;
+        }
+        .promo-btn{
+            width: 400px;
+            height: 80px;
+            font-size: 1.1rem;
+        }
+    }
+
+    .footer{
+        padding-top: 180px;
+        padding-bottom: 60px;
+    }
+
+    .logo-container svg{
+        width: 240px;
+        height: 39px;
+    }
+
+    .footer-info{
+        padding: 35px 0;
+        display: flex;
+    }
+
+    .contact{
+        padding: 0;
+        margin-right: 50px;
+        width: calc(40% - 50px);
+        .contact-field{
+            .icon{
+                width: 40px;
+            }
+            a{
+                max-width: 330px; 
+                font-size: 0.9rem;
+            }
+            &:not(:last-child){
+                padding-bottom: 20px;
+            }
+        }
+    }
+
+    .link-group{
+        width: 18%;
+        a{
+            margin-bottom: 20px;
+            font-size: 1rem;
+        }
+    }
+
+    .social{
+        padding: 0;
+        text-align: left;
+    }
+
+    .copyright{
+        text-align: right;
+    }
+}
