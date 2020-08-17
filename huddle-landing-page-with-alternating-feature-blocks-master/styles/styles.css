@@ -334,6 +334,7 @@ main .main-container {
   }
   .jumbo-container section {
     width: 41%;
+    margin: unset;
     padding-top: 10px;
     padding-bottom: unset;
     text-align: left;
