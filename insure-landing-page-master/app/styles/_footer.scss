@@ -1,0 +1,106 @@
+
+.footer{
+
+    background-color: $very_light_gray;
+    background-image: url(../../images/bg-pattern-footer-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: 100% 175px;
+
+    .container{
+        padding: 90px 0;
+        text-align: center;
+    }
+
+    &__header{
+        padding-bottom: 35px;
+        border-bottom: 1px solid hsla(273, 4%, 51%, 0.3);
+    }
+
+    &__logo img{
+        padding-bottom: 27px;
+    }
+
+    &__social{
+        a:not(:last-child){
+            margin-right: 13px;
+        }
+        svg{
+            fill: $dark_grayish_violet;
+            transition: fill 0.3s;
+            &:hover{
+                fill: $very_dark_violet;
+            }
+        }
+    }
+
+    &__grid{
+        padding-top: 40px;
+    }
+
+    &__link-group{
+        font-size: 0.85rem;
+        font-weight: $font_bold;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        p{
+            padding-bottom: 30px;
+            color: $dark_grayish_violet;
+        }
+        a{
+            display: table;
+            margin: 0 auto;
+            color: $very_dark_violet;
+            &:not(:last-child){
+                margin-bottom: 13px;
+            }
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+        &:not(:last-child){
+            padding-bottom: 40px;
+        }
+    }
+
+}
+
+// Desktop Media Query 
+@media only screen and (min-width: $breakpoint){
+    .footer{
+
+        background-image: url(../../images/bg-pattern-footer-desktop.svg);
+        background-size: unset;
+
+        .container{
+            padding: 65px 0;
+            text-align: left;
+        }
+    
+        &__header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    
+        &__logo img{
+            padding-bottom: unset;
+        }
+    
+        &__grid{
+            display: flex;
+            padding-top: 45px;
+        }
+    
+        &__link-group{
+            font-size: 0.9rem;
+            a{
+                margin: unset; 
+            }
+            &:not(:last-child){
+                width: 26%;
+                padding-bottom: unset;
+            }
+        }
+    
+    }
+}

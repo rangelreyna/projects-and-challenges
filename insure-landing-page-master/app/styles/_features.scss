@@ -1,0 +1,136 @@
+
+.features{
+
+    .container{
+        padding: 140px 0;
+        text-align: center;
+    }
+
+    .hovering-line{
+        margin: 0 auto;
+        height: 30px;
+        border-color: $dark_grayish_violet;
+        opacity: 0.8;
+    }
+
+    &__title{
+        padding-bottom: 70px;
+        font-size: 2.9rem;
+        color: $very_dark_violet;
+    }
+
+    &__grid{
+        padding-bottom: 140px;
+    }
+
+    &__item{
+        img{
+            padding-bottom: 25px;
+        }
+        h4{
+            padding-bottom: 15px;
+            font-size: 1.7rem;
+            color: $very_dark_violet;
+        }
+        p{
+            max-width: 500px;
+            margin: 0 auto;
+            font-size: 1rem;
+            line-height: 1.6;
+            color: $dark_grayish_violet;
+        }
+        &:not(:last-child){
+            padding-bottom: 60px;
+        }
+    }
+
+    &__promo{
+        padding: 70px 30px;
+        background-color: $dark_violet;
+        background-image: url(../../images/bg-pattern-how-we-work-mobile.svg);
+        background-repeat: no-repeat;
+        background-position: top right;
+        h3{
+            padding-bottom: 40px;
+            font-size: 2.5rem;
+            line-height: 1.0;
+            color: #fff;
+            span{
+                display: block;
+            }
+        }
+        button{
+            border: 1px solid #fff;
+            color: #fff;
+            &:hover{
+                background-color: #fff;
+                color: $dark_violet;
+            }
+        }
+    }
+
+}
+
+// Desktop Media Query 
+@media only screen and (min-width: $breakpoint){
+    .features{
+
+        .container{
+            padding: 250px 0 150px 0;
+            text-align: left;
+        }
+    
+        .hovering-line{
+            margin: unset;
+            height: 60px;
+            opacity: 1.0;
+        }
+    
+        &__title{
+            padding-bottom: 95px;
+            font-size: 4.3rem;
+        }
+    
+        &__grid{
+            padding-bottom: 160px;
+            display: flex;
+        }
+    
+        &__item{
+            h4{
+                font-size: 1.8rem;
+            }
+            p{
+                margin: unset;
+            }
+            &:not(:last-child){
+                padding-bottom: unset;
+                padding-right: 35px;
+            }
+        }
+    
+        &__promo{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 70px 80px;
+            background-image: url(../../images/bg-pattern-how-we-work-desktop.svg);
+            background-size: auto 100%;
+            h3{
+                padding-bottom: unset;
+                padding-right: 20px;
+                font-size: 3.4rem;
+            }
+            button{
+                border: 2px solid;
+            }
+        }
+    
+    }
+}
+
+@media only screen and (min-width: 1070px){
+    .features .container{
+        padding: 305px 0 150px 0;
+    }
+}

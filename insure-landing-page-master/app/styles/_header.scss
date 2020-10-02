@@ -1,0 +1,107 @@
+
+.header{
+
+    .container{
+        padding: 25px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__logo img{
+        display: block;
+    }
+
+    &__hamburger img{
+        display: block;
+    }
+    
+    &__links{
+        display: none;
+    }
+
+    .mobile-menu{
+        position: fixed;
+        top: 82px;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: $very_dark_violet;
+        background-image: url(../../images/bg-pattern-mobile-nav.svg);
+        background-repeat: no-repeat;
+        background-size: 100% 220px;
+        background-position: bottom;
+        text-align: center;
+        visibility: hidden;
+        opacity: 0; 
+        transition: visibility 0.2s, opacity 0.2s;
+        z-index: 5;
+        a{
+            display: block;
+            margin-top: 45px;
+            font-size: 1.2rem; 
+            font-weight: $font_bold;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: #fff;
+        }
+        button{
+            width: 87%;
+            max-width: 300px;
+            margin-top: 35px;
+            border: 1px solid #fff;
+            color: #fff;
+            font-size: 1.2rem;
+            &:hover{
+                background-color: #fff;
+                color: $very_dark_violet;
+            }
+        }
+    }
+
+    &.open{
+        .mobile-menu{
+            visibility: visible;
+            opacity: 1;
+        }
+    }
+}
+
+
+// Desktop Media Query 
+@media only screen and (min-width: $breakpoint){
+    .header{
+        .container{
+            padding: 20px 0;
+        }
+    
+        &__hamburger{
+            display: none;
+        }
+        
+        &__links{
+            display: block;
+            a{
+                margin-right: 25px;
+                font-size: 0.85rem;
+                font-weight: $font_bold;
+                text-transform: uppercase;
+                letter-spacing: 0.1em;
+                color: $dark_grayish_violet;
+                transition: color 0.3s;
+                &:hover{
+                    color: $very_dark_violet;
+                }
+            }
+            button{
+                margin-left: 5px;
+                border-color: $very_dark_violet;
+                color: $very_dark_violet;
+                &:hover{
+                    background-color: $very_dark_violet;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
