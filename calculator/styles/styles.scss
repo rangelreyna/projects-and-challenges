@@ -1,0 +1,109 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+*:focus{
+    outline: none;
+}
+
+body{
+    font-family: 'Trebuchet MS', sans-serif;
+    background-color: hsl(190, 30%, 97%);
+}
+
+.title{
+    margin-top: 40px;
+    text-align: center;
+    font-size: 2.7rem;
+    color: hsl(0, 0%, 40%);
+}
+
+.calculator{
+
+    display: table;
+    height: 29rem;
+    width: 270px;
+    margin: 30px auto; 
+    padding: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: hsl(0, 0%, 100%);
+    box-shadow: 2px 2px 20px -10px hsl(0, 0%, 66.67%);
+
+    &__display{ 
+        width: 16.9rem; 
+        height: 7rem;
+        margin-bottom: 1rem;
+        white-space: nowrap;
+        direction: rtl;
+        overflow-x: auto;
+        overflow-y: hidden;
+        &::-webkit-scrollbar{
+            height: 4px;
+        }
+        &::-webkit-scrollbar-thumb{
+            border-radius: 6px;
+            border: 3px solid #999;
+        }
+    }
+
+    &__display-contents{
+        float: right;
+        direction: ltr;
+        padding-top: 2rem;
+        font-size: 4.6rem;
+        color: hsl(0, 0%, 46.67%);
+    }
+
+    &.left-align-scroll{
+        .calculator__display{
+            direction: ltr;
+        }
+        .calculator__display-contents{
+            float: left;
+        }
+    }
+
+    &__keys{
+        max-width: 18rem;
+        margin: 0 auto;
+        display: grid;
+        grid-template: repeat(5, 1fr) / repeat(4, 1fr);
+        grid-gap: 10px;
+    }
+
+    &__key{
+        width: 60px;
+        height: 60px;
+        border: none;
+        border-radius: 30px;
+        overflow: hidden;
+        font-family: inherit;
+        font-weight: bold;
+        font-size: 1.4rem;
+        background-color: hsl(0, 0%, 93.33%);
+        color: hsl(0, 0%, 46.67%);
+        &:hover{
+            cursor: pointer;
+            opacity: 0.8;
+        }
+        &:active, &.is-depressed{
+            border: 2px solid hsl(0, 0%, 60%);
+        }
+    }
+
+    &__key-operator{
+        font-size: 1.7rem;
+        background-color:hsl(207, 26%, 86%);
+    }
+
+    &__key-equal{
+        grid-area: 2 / 4 / span 4 / 5;
+        height: 100%;
+        font-size: 1.6rem;
+        background-color: hsl(190, 58%, 69%);
+    }
+
+}

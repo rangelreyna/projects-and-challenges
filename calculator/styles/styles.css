@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*:focus {
+  outline: none;
+}
+
+body {
+  font-family: 'Trebuchet MS', sans-serif;
+  background-color: #f5f9fa;
+}
+
+.title {
+  margin-top: 40px;
+  text-align: center;
+  font-size: 2.7rem;
+  color: #666666;
+}
+
+.calculator {
+  display: table;
+  height: 29rem;
+  width: 270px;
+  margin: 30px auto;
+  padding: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: white;
+  -webkit-box-shadow: 2px 2px 20px -10px #aaaaaa;
+          box-shadow: 2px 2px 20px -10px #aaaaaa;
+}
+
+.calculator__display {
+  width: 16.9rem;
+  height: 7rem;
+  margin-bottom: 1rem;
+  white-space: nowrap;
+  direction: rtl;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.calculator__display::-webkit-scrollbar {
+  height: 4px;
+}
+
+.calculator__display::-webkit-scrollbar-thumb {
+  border-radius: 6px;
+  border: 3px solid #999;
+}
+
+.calculator__display-contents {
+  float: right;
+  direction: ltr;
+  padding-top: 2rem;
+  font-size: 4.6rem;
+  color: #777777;
+}
+
+.calculator.left-align-scroll .calculator__display {
+  direction: ltr;
+}
+
+.calculator.left-align-scroll .calculator__display-contents {
+  float: left;
+}
+
+.calculator__keys {
+  max-width: 18rem;
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (1fr)[5];
+  -ms-grid-columns: (1fr)[4];
+      grid-template: repeat(5, 1fr)/repeat(4, 1fr);
+  grid-gap: 10px;
+}
+
+.calculator__key {
+  width: 60px;
+  height: 60px;
+  border: none;
+  border-radius: 30px;
+  overflow: hidden;
+  font-family: inherit;
+  font-weight: bold;
+  font-size: 1.4rem;
+  background-color: #eeeeee;
+  color: #777777;
+}
+
+.calculator__key:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.calculator__key:active, .calculator__key.is-depressed {
+  border: 2px solid #999999;
+}
+
+.calculator__key-operator {
+  font-size: 1.7rem;
+  background-color: #d2dce5;
+}
+
+.calculator__key-equal {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 4;
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 1;
+  grid-area: 2 / 4 / span 4 / 5;
+  height: 100%;
+  font-size: 1.6rem;
+  background-color: #82cfde;
+}
+/*# sourceMappingURL=styles.css.map */
