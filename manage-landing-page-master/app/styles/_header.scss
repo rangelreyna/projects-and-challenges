@@ -1,0 +1,140 @@
+
+.header{
+    position: relative;
+
+    &::before{ 
+        position: absolute;
+        content: '';
+        width: 315px;
+        height: 330px;
+        top: 0;
+        right: 0;
+        background-image: url(../../images/bg-tablet-pattern.svg);
+        background-repeat: no-repeat;
+        background-position: left bottom;
+        background-size: 140%;
+    }
+
+    .container{
+        position: relative;
+        padding: 40px 0;
+        height: 25px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        button{
+            display: none;
+        }
+    }
+
+    &__logo img{
+        display: block;
+        padding-top: 7px;
+        width: 115px;
+        height: auto;
+    }
+
+    &__hamburger img{
+        position: relative;
+        display: block;
+        padding-top: 2px;
+        z-index: 6;
+    }
+
+    &__links{ 
+        display: none;
+    }
+
+    &__overlay{
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: linear-gradient(to bottom, hsla(0, 0%, 0%, 0) 0%, hsla(233, 12%, 13%, 0.6) 100%);
+        visibility: hidden;
+        opacity: 0;
+        transition: visibility 0.3s, opacity 0.3s;
+        z-index: 5;
+    }
+
+    .mobile-menu{
+        width: 87%;
+        max-width: 570px;
+        margin: 105px auto 0 auto;
+        padding: 40px 0;
+        border-radius: 5px;
+        background-color: #fff;  
+        a{
+            display: table;
+            margin: 0 auto;
+            font-weight: $font_bold;
+            font-size: 1rem;
+            color: $dark_blue;
+            &:not(:last-child){
+                margin-bottom: 25px;
+            }
+        }
+    }
+
+    &.open{
+        .header__hamburger img{
+            padding-top: 0px;
+            padding-right: 2px;
+        }
+        .header__overlay{
+            visibility: visible;
+            opacity: 1;
+        }
+    }
+
+}
+
+// Desktop Media Query 
+@media only screen and (min-width: $breakpoint){
+    .header{
+        &::before{ 
+            width: 670px;
+            height: 665px;
+            background-size: 120%;
+        }
+
+        .container{
+            padding: 60px 0;
+            height: unset;
+            align-items: center;
+            button{
+                display: inline-block;
+            }
+        }
+    
+        &__logo img{
+            padding-top: 10px;
+            width: 146px;
+        }
+    
+        &__hamburger{
+            display: none;
+        }
+    
+        &__links{ 
+            display: block;
+            a{
+                font-weight: $font_bold;
+                font-size: 0.9rem; 
+                color: $dark_blue;
+                transition: color 0.3s;
+                &:hover{
+                    color: $dark_grayish_blue;
+                }
+                &:not(:last-child){
+                    margin-right: 30px;
+                }
+            }
+        }
+
+        &__overlay{
+            display: none;
+        }
+    }
+}

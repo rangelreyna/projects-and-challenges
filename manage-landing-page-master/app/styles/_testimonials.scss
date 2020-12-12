@@ -1,0 +1,153 @@
+
+.testimonials{
+    position: relative;
+    width: 330px;
+    margin: 0 auto 40px auto;
+    text-align: center;
+    overflow-x: hidden;
+
+    h3{
+        font-size: 1.9rem;
+        margin-bottom: 360px;
+    }
+
+    &__slider{
+        position: absolute;
+        top: 100px;
+        width: 100%;
+        height: 280px;
+        transform: translateX(-105%);
+        transition: transform ease 0.5s;
+    }
+
+    &__slide{
+        position: absolute;
+        bottom: 0;
+        padding: 60px 20px 45px 20px;
+        background-color: $very_light_gray;
+        border-radius: 3px;
+        img{
+            position: absolute;
+            top: -35px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 70px;
+            height: auto;
+        }
+        h4{
+            margin-bottom: 20px;
+            font-size: 1rem;
+        }
+        p{
+            font-size: 0.85rem;
+            line-height: 1.8;
+        }
+        &:nth-child(2){
+            transform: translateX(105%);
+        }
+        &:nth-child(3){
+            transform: translateX(210%);
+        }
+        &:nth-child(4){
+            transform: translateX(315%);
+        }
+    }
+
+    .slider-controls{
+        position: relative;
+    }
+
+    .slider-button{
+        position: absolute;
+        top: -210px; 
+        width: 20px;
+        height: 20px;
+        border-left: 4px solid $bright_red;
+        border-bottom: 4px solid $bright_red;
+        border-radius: 2px;
+        transition: opacity 0.5s;
+        &.prev-button{
+            transform: rotate(45deg);
+            left: 10px; 
+        }
+        &.next-button{
+            transform: rotate(225deg);
+            right: 10px;  
+        }
+        &:hover{
+            cursor: pointer;
+            opacity: 0.4;
+        }
+    }
+
+    .slider-dots-wrapper{
+        display: flex;
+        justify-content: center;
+    }
+
+    .slider-dot{
+        width: 6px;
+        height: 6px;
+        border: 1px solid $bright_red;
+        border-radius: 50%;
+        transition: opacity 0.3s;
+        &:not(:last-child){
+            margin-right: 5px;
+        }
+        &:hover{
+            cursor: pointer;
+            opacity: 0.4;
+        }
+        &.active{
+            background-color: $bright_red;
+        }
+    }
+
+    button{
+        margin-top: 45px;
+    }
+
+}
+
+// Desktop Media Query 
+@media only screen and (min-width: $breakpoint){
+    .testimonials{
+        width: 540px; 
+        margin-bottom: 180px;
+        overflow-x: unset; 
+    
+        h3{
+            font-size: 2.45rem; 
+        }
+    
+        &__slider{
+            top: 120px; 
+            height: 270px; 
+        }
+    
+        &__slide{
+            padding: 60px 41px 45px 41px; 
+            p{
+                font-size: 1rem; 
+            }
+        }
+        
+        .slider-button{
+            top: -180px;
+            &.prev-button{
+                left: -10px;
+            }
+            &.next-button{
+                right: -10px;
+            }
+        }
+    
+        .slider-dot{ 
+            width: 7px; 
+            height: 7px; 
+            &:not(:last-child){
+                margin-right: 7px;
+            }
+        }
+    }
+}

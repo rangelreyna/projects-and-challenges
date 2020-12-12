@@ -1,0 +1,173 @@
+
+.footer{
+    background-color: $very_dark_blue;
+    padding: 50px 0 30px 0;
+    text-align: center;
+
+    &__form{
+        position: relative;
+        display: inline-block;
+        margin-bottom: 55px;
+        .field{
+            box-sizing: border-box;
+            width: 235px;
+            height: 45px;
+            margin-right: 5px;
+            padding: 0 25px;
+            border: none;
+            border-radius: 25px;
+            font-family: inherit;
+            font-size: 0.8rem;
+            background-color: #fff;
+            color: $dark_blue;
+            transition: box-shadow 0.3s;
+            &::placeholder{
+                color: $dark_grayish_blue;
+            }
+            &:hover{
+                box-shadow: 0 0 10px -2px $very_light_gray;
+            }
+        }
+        .submit-btn{
+            width: 80px;
+            box-shadow: unset;
+        }
+        .error-msg{
+            display: none;
+            position: absolute;
+            top: 50px;
+            left: 25px;
+            font-size: 0.7rem;
+            color: $bright_red;
+        }
+        &.error{
+            .field{
+                border: 2px solid $bright_red;
+                color: $bright_red;
+            }
+            .error-msg{
+                display: block;
+            }
+        }
+    }
+
+    &__links-wrapper{
+        max-width: 330px; 
+        margin: 0 auto 45px auto;
+        display: flex;
+        justify-content: space-between;
+        text-align: left;
+    }
+
+    &__link-group{
+        padding: 0 25px 0 40px; 
+        a{
+            display: table;
+            color: #fff;
+            font-size: 0.9rem;
+            font-weight: $font_thin;
+            transition: color 0.3s;
+            &:hover{
+                color: $bright_red;
+            }
+            &:not(:last-child){
+                margin-bottom: 15px;
+            }
+        }
+    }
+
+    &__socials{
+        margin-bottom: 50px; 
+        a{
+            margin: 0 15px;
+        }
+        svg{
+            width: 30px;
+            fill: #fff;
+            transition: fill 0.3s;
+            &:hover{
+                fill: $bright_red;
+            }
+        }
+    }
+
+    &__logo img{
+        margin-bottom: 50px; 
+        width: 160px;
+        height: auto;
+    }
+
+    &__copyright{
+        font-size: 0.8rem;
+    }
+
+}
+
+// Desktop Media Query 
+@media only screen and (min-width: $breakpoint){
+    .footer{
+        padding: 60px 0;
+        text-align: left;
+    
+        .container{
+            position: relative;
+            display: flex;
+            flex-direction: row-reverse; 
+            justify-content: space-between; 
+        }
+    
+        &__form{
+            .field{
+                width: 200px;
+                padding: 0 18px;
+                margin-bottom: 27px;
+            }
+            .submit-btn{
+                width: 65px; 
+            }
+            .error-msg{
+                left: 18px;
+            }
+        }
+    
+        &__links-wrapper{
+            width: 43%;
+            max-width: unset; 
+            margin: unset;
+        }
+    
+        &__link-group{
+            padding: 0 90px 0 0; 
+            a{
+                font-size: 0.95rem; 
+            }
+        }
+    
+        &__media-wrapper{
+            margin-right: 35px;
+            display: flex;
+            flex-direction: column-reverse;
+            justify-content: space-between;
+        }
+    
+        &__socials{
+            margin-bottom: unset; 
+            a{
+                margin: 0 10px 0 0; 
+            }
+            svg{
+                width: 20px; 
+            }
+        }
+    
+        &__logo img{
+            width: 146px;
+        }
+    
+        &__copyright{ 
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+    }
+}

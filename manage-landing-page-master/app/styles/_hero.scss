@@ -1,0 +1,65 @@
+
+.hero{
+    position: relative;
+    margin-bottom: 100px;
+
+    &__img{
+        display: block;
+        width: 100%;
+        max-width: 470px;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    &__text{
+        max-width: 570px; 
+        margin: 0 auto;
+        text-align: center;
+        h1{
+            padding-bottom: 10px;
+            font-size: 2.4rem;
+            line-height: 1.25;
+        }
+        p{
+            padding-bottom: 30px;
+            font-size: 1rem;
+            line-height: 1.8;
+        }
+    }
+
+}
+
+// Desktop Media Query 
+@media only screen and (min-width: $breakpoint){
+    .hero{
+        margin-bottom: 110px;
+        padding-top: 50px;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+
+        &__img{
+            width: 50%;
+            max-width: 570px;
+            margin: unset;
+        }
+    
+        &__text{
+            max-width: 570px; 
+            margin: unset;
+            padding-right: 20px;
+            text-align: left;
+            h1{
+                padding-bottom: 30px;
+                font-size: 3.4rem; 
+                line-height: 1.2; 
+            }
+            p{
+                max-width: 345px; 
+                padding-bottom: 40px;
+                line-height: 1.7; 
+            }
+        }
+    }
+}

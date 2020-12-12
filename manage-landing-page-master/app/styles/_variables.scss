@@ -1,0 +1,20 @@
+// Imported Fonts 
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam:wght@400;500;700&display=swap');
+
+// Fonts 
+$font: 'Be Vietnam', sans-serif;
+$font_thin: 400; 
+$font_regular: 500; 
+$font_bold: 700;
+
+// Colors 
+$bright_red: hsl(12, 88%, 59%);
+$coral: hsl(12, 92%, 72%);
+$dark_blue: hsl(228, 39%, 23%);
+$dark_grayish_blue: hsl(227, 12%, 61%);
+$very_dark_blue: hsl(233, 12%, 13%);
+$very_pale_red: hsl(13, 100%, 96%);
+$very_light_gray: hsl(0, 0%, 98%);
+
+// Breakpoints 
+$breakpoint: 975px; 

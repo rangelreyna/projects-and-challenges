@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-family: $font;
+    font-size: 16px;
+    background-color: #fff; 
+}
+
+body{
+    overflow-x: hidden;
+}
+
+body.no-scroll{ 
+    overflow-y: hidden;
+}
+
+a{
+    text-decoration: none;
+}
+
+*:focus{
+    outline: none;
+}
+
+h1, h2, h3, h4{ 
+    color: $dark_blue;
+}
+
+p{
+    font-weight: $font_thin;
+    color: $dark_grayish_blue;
+}
+
+.container{ 
+    width: 87%;
+    margin: 0 auto;
+    max-width: 1300px;
+}
+
+button{ 
+    width: 140px;
+    height: 45px;
+    padding-bottom: 2px;
+    border: none;
+    border-radius: 23px;
+    background-color: $bright_red;
+    color: $very_pale_red;
+    font-family: inherit;
+    font-weight: $font_bold;
+    font-size: 0.85rem;
+    box-shadow: 0 12px 20px -10px $bright_red;
+    transition: background-color 0.3s, color 0.3s;
+    &:hover{
+        cursor: pointer;
+        background-color: $coral; 
+    }
+}
+
+.attribution{
+    padding: 0.7rem 0;
+    font-size: 11px;
+    text-align: center;
+    color: $dark_blue;
+    border-top: 2px solid $bright_red;
+    background-color: $very_light_gray;
+    a{
+        color: $bright_red;
+    }
+}
+
+
+// Desktop Media Query 
+@media only screen and (min-width: 1300px){ 
+    .container{
+        width: 78%;
+    }
+}
