@@ -75,32 +75,34 @@ function handleDotEvent(index){
 
 function handlePrev(){
     const activeIndex = getActiveIndex();
+    let prevIndex = activeIndex - 1;
 
     if (activeIndex === 0){
-        return;
+        prevIndex = slides.length - 1;
     } 
 
     slides[activeIndex].classList.remove('active');
     dots[activeIndex].classList.remove('active');
 
-    slider.style.transform = slidePositions[slideTranslate[activeIndex-1]];
-    slides[activeIndex-1].classList.add('active');
-    dots[activeIndex-1].classList.add('active');
+    slider.style.transform = slidePositions[slideTranslate[prevIndex]];
+    slides[prevIndex].classList.add('active');
+    dots[prevIndex].classList.add('active');
 }
 
 function handleNext(){
     const activeIndex = getActiveIndex();
+    let nextIndex = activeIndex + 1; 
 
     if (activeIndex === slides.length-1){
-        return;
+        nextIndex = 0;
     } 
 
     slides[activeIndex].classList.remove('active');
     dots[activeIndex].classList.remove('active');
 
-    slider.style.transform = slidePositions[slideTranslate[activeIndex+1]];
-    slides[activeIndex+1].classList.add('active');
-    dots[activeIndex+1].classList.add('active');
+    slider.style.transform = slidePositions[slideTranslate[nextIndex]];
+    slides[nextIndex].classList.add('active');
+    dots[nextIndex].classList.add('active');
 }
 
 dots.forEach((dot, index) => {
