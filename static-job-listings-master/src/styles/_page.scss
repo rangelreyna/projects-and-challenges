@@ -1,0 +1,40 @@
+
+.page{
+    min-height: calc(100vh - 115px);
+    background-color: $light_grayish_cyan_b;
+
+    &__header{
+        position: absolute; 
+        top: 0;
+        width: 100%;
+        height: 155px;
+        background-color: $desaturated_dark_cyan;
+        background-image: url("../assets/bg-header-mobile.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        z-index: 0;
+    }
+
+    &__body{
+        position: relative;
+        z-index: 1;
+        margin-top: 115px;
+        text-align: center;
+        padding-bottom: 5px;
+    }
+    
+}
+
+// Desktop Media Query 
+@media only screen and (min-width: $breakpoint){
+    .page{
+        &__header{
+            background-image: url("../assets/bg-header-desktop.svg");
+        }
+
+        &__body{
+            padding-bottom: 95px;
+        }
+    }
+}

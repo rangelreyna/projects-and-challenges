@@ -1,0 +1,197 @@
+[
+    {
+        "id": "240458",
+        "logo": "/logos/photosnap.svg",
+        "company": "Photosnap",
+        "title": "Senior Frontend Developer",
+        "isNew": true,
+        "isFeatured": true,
+        "postTime": "1d ago",
+        "type": "Full Time",
+        "location": "USA only",
+        "role": "Frontend",
+        "level": "Senior",
+        "languages": [
+            "HTML",
+            "CSS",
+            "JavaScript"
+        ],
+        "tools": []
+    },
+    {
+        "id": "714948",
+        "logo": "/logos/myhome.svg",
+        "company": "MyHome",
+        "title": "Junior Frontend Developer",
+        "isNew": false,
+        "isFeatured": false,
+        "postTime": "5d ago",
+        "type": "Contract",
+        "location": "USA only",
+        "role": "Frontend",
+        "level": "Junior",
+        "languages": [
+            "CSS",
+            "JavaScript"
+        ],
+        "tools": []
+    },
+    {
+        "id": "565930",
+        "logo": "/logos/loop-studios.svg",
+        "company": "Loop Studios",
+        "title": "Software Engineer",
+        "isNew": false,
+        "isFeatured": false,
+        "postTime": "1w ago",
+        "type": "Full Time",
+        "location": "Worldwide",
+        "role": "Fullstack",
+        "level": "Midweight",
+        "languages": [
+            "JavaScript",
+            "Ruby"
+        ],
+        "tools": [
+            "Sass"
+        ]
+    },
+    {
+        "id": "378722",
+        "logo": "/logos/account.svg",
+        "company": "Account",
+        "title": "Junior Frontend Developer",
+        "isNew": true,
+        "isFeatured": false,
+        "postTime": "2d ago",
+        "type": "Part Time",
+        "location": "USA only",
+        "role": "Frontend",
+        "level": "Junior",
+        "languages": [
+            "JavaScript"
+        ],
+        "tools": [
+            "React",
+            "Sass"
+        ]
+    },
+    {
+        "id": "740390",
+        "logo": "/logos/manage.svg",
+        "company": "Manage",
+        "title": "Fullstack Developer",
+        "isNew": true,
+        "isFeatured": true,
+        "postTime": "1d ago",
+        "type": "Part Time",
+        "location": "Remote",
+        "role": "Fullstack",
+        "level": "Midweight",
+        "languages": [
+            "Python"
+        ],
+        "tools": [
+            "React"
+        ]
+    },
+    {
+        "id": "837777",
+        "logo": "/logos/faceit.svg",
+        "company": "FaceIt",
+        "title": "Junior Backend Developer",
+        "isNew": false,
+        "isFeatured": false,
+        "postTime": "2w ago",
+        "type": "Full Time",
+        "location": "UK only",
+        "role": "Backend",
+        "level": "Junior",
+        "languages": [
+            "Ruby"
+        ],
+        "tools": [
+            "RoR"
+        ]
+    },
+    {
+        "id": "640620",
+        "logo": "/logos/shortly.svg",
+        "company": "Shortly",
+        "title": "Junior Developer",
+        "isNew": false,
+        "isFeatured": false,
+        "postTime": "2w ago",
+        "type": "Full Time",
+        "location": "Worldwide",
+        "role": "Frontend",
+        "level": "Junior",
+        "languages": [
+            "HTML",
+            "JavaScript"
+        ],
+        "tools": [
+            "Sass"
+        ]
+    },
+    {
+        "id": "655987",
+        "logo": "/logos/insure.svg",
+        "company": "Insure",
+        "title": "Junior Frontend Developer",
+        "isNew": false,
+        "isFeatured": false,
+        "postTime": "2w ago",
+        "type": "Full Time",
+        "location": "USA only",
+        "role": "Frontend",
+        "level": "Junior",
+        "languages": [
+            "JavaScript"
+        ],
+        "tools": [
+            "Vue",
+            "Sass"
+        ]
+    },
+    {
+        "id": "633339",
+        "logo": "/logos/eyecam-co.svg",
+        "company": "Eyecam Co.",
+        "title": "Full Stack Engineer",
+        "isNew": false,
+        "isFeatured": false,
+        "postTime": "3w ago",
+        "type": "Full Time",
+        "location": "Worldwide",
+        "role": "Fullstack",
+        "level": "Midweight",
+        "languages": [
+            "JavaScript",
+            "Python"
+        ],
+        "tools": [
+            "Django"
+        ]
+    },
+    {
+        "id": "252041",
+        "logo": "/logos/the-air-filter-company.svg",
+        "company": "The Air Filter Company",
+        "title": "Front-end Dev",
+        "isNew": false,
+        "isFeatured": false,
+        "postTime": "1mo ago",
+        "type": "Part Time",
+        "location": "Worldwide",
+        "role": "Frontend",
+        "level": "Junior",
+        "languages": [
+            "JavaScript"
+        ],
+        "tools": [
+            "React",
+            "Sass"
+        ]
+    }
+]

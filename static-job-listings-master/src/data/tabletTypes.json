@@ -1,0 +1,26 @@
+{
+    "roles": [
+        "Frontend", 
+        "Backend", 
+        "Fullstack"
+    ],
+    "levels": [
+        "Junior", 
+        "Midweight", 
+        "Senior"
+    ],
+    "languages": [
+        "Python",
+        "Ruby", 
+        "JavaScript", 
+        "HTML", 
+        "CSS"
+    ],
+    "tools": [
+        "React", 
+        "Sass", 
+        "Vue", 
+        "Django", 
+        "RoR"
+    ]
+}

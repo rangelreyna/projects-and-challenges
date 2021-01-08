@@ -1,0 +1,67 @@
+
+.filter-bar{
+    box-sizing: border-box;
+    min-height: 72px;
+    margin-bottom: 55px; 
+    padding: 20px; 
+    background-color: #fff; 
+    border-radius: 6px;
+    box-shadow: $box-shadow; 
+    display: flex;
+    justify-content: space-between;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.2s 0.3s, opacity 0.2s 0.3s;
+
+    &.show{
+        visibility: visible;
+        opacity: 1;
+    }
+
+    // tablet stylings are in "_globals.scss"
+
+    .removeTabletBtn{
+        width: 32px;
+        height: 100%;
+        border: none;
+        background-color: $desaturated_dark_cyan;
+        background-image: url("../assets/icon-remove.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        transition: background-color 0.2s;
+        &:hover{
+            cursor: pointer;
+            background-color: $very_dark_grayish_cyan;
+        }
+    }
+
+    .clearBtn{
+        margin-left: 20px;
+        padding: 2px 5px 0px 5px;
+        border: none;
+        font-family: inherit;
+        font-weight: $font_bold;
+        font-size: 0.9rem;
+        background-color: transparent;
+        color: $dark_grayish_cyan;
+        transition: color 0.2s;
+        &:hover{
+            cursor: pointer;
+            color: $desaturated_dark_cyan;
+            text-decoration: underline;
+        }
+    }
+
+}
+
+// Desktop Media Query 
+@media only screen and (min-width: $breakpoint){
+    .filter-bar{
+        margin-bottom: 40px; 
+        padding: 20px 40px; 
+
+        .clearBtn{
+            font-size: 0.95rem;
+        }
+    }
+}

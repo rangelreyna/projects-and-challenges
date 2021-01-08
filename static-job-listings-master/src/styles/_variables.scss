@@ -1,0 +1,20 @@
+// Imported Fonts 
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@500;700&display=swap');
+
+// Fonts 
+$font: 'Spartan', sans-serif;
+$font_regular: 500; 
+$font_bold: 700;
+
+// Colors 
+$desaturated_dark_cyan: hsl(180, 29%, 50%); 
+$light_grayish_cyan_b: hsl(180, 52%, 96%); // background
+$light_grayish_cyan_ft: hsl(180, 31%, 95%); // filter tablets
+$dark_grayish_cyan: hsl(180, 8%, 52%); 
+$very_dark_grayish_cyan: hsl(180, 14%, 20%); 
+
+// Box Shadow
+$box-shadow: 0px 14px 20px -5px hsla(180, 29%, 50%, 0.3);
+
+// Breakpoints 
+$breakpoint: 950px; 
