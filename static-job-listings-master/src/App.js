@@ -21,15 +21,15 @@ function App() {
   // listings 
   const [listings, setListings] = useState([]);
   const [filteredListings, setFilteredListings] = useState([]);
-  //const [isLoading, setIsLoading] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
-    //setIsLoading(true);
+    setIsLoading(true);
     const timer = setTimeout(() => {
       setListings(positionsData);
       setFilteredListings(positionsData);
-      //setIsLoading(false);
-    }, 1);
+      setIsLoading(false);
+    }, 1000);
 
     return () => clearTimeout(timer);
   }, []);
@@ -94,7 +94,7 @@ function App() {
   };
 
   return (
-    <Page filterTablets={filterTablets} filteredListings={filteredListings} 
+    <Page filterTablets={filterTablets} filteredListings={filteredListings} isLoading={isLoading} 
       handleAddTablet={handleAddTablet} handleRemoveTablet={handleRemoveTablet} handleClear={handleClear} />
   );
 }
