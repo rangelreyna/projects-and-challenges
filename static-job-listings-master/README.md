@@ -1,4 +1,4 @@
-See my solution [live](https://projects-and-challenges.vercel.app/static-job-listings-master/index.html).
+See my solution [live](https://projects-and-challenges.vercel.app/static-job-listings-master/build/index.html).
 
 # Frontend Mentor - Job Listings Challenge
 
