@@ -28,6 +28,7 @@ a {
 
 .container {
   width: 88%;
+  max-width: 1267px;
   margin: 0 auto;
 }
 

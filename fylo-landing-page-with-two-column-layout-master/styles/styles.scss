@@ -10,6 +10,7 @@ $body_font: 'Open Sans', sans-serif;
 $regular: 400; 
 $bold: 700;
 $page_width: 88%;
+$max_width: 1267px; // 88% of 1440px
 $primary_color: hsl(243, 87%, 12%);  
 $secondary_color: hsl(238, 22%, 44%); 
 $accent_color1: hsl(224, 93%, 58%); // buttons 
@@ -45,6 +46,7 @@ a{
 
 .container{
     width: $page_width;
+    max-width: $max_width;
     margin: 0 auto;
 }
 
