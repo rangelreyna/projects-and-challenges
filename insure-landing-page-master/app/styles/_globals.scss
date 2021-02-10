@@ -9,6 +9,10 @@ html{
     background-color: #fff;
 }
 
+body{
+    overflow-x: hidden;
+}
+
 body.no-scroll{
     overflow: hidden;
 }
@@ -27,7 +31,8 @@ a{
 }
 
 .container{
-    width: 87%;
+    width: $mobile_width;
+    max-width: $max_width;
     margin: 0 auto;
 }
 
@@ -68,6 +73,6 @@ button{
 // Desktop Media Query 
 @media only screen and (min-width: 1070px){
     .container{
-        width: 79%;
+        width: $desktop_width;
     }
 }

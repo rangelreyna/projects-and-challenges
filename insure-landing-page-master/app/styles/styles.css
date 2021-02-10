@@ -11,6 +11,10 @@ html {
   background-color: #fff;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 body.no-scroll {
   overflow: hidden;
 }
@@ -30,6 +34,7 @@ a {
 
 .container {
   width: 87%;
+  max-width: 1137px;
   margin: 0 auto;
 }
 
@@ -334,6 +339,15 @@ button:hover {
 @media only screen and (min-width: 1070px) {
   .hero .container::after {
     right: -13.3%;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .hero .container::before {
+    left: calc((-100vw + 1137px)/2);
+  }
+  .hero .container::after {
+    right: calc((-100vw + 1137px)/2);
   }
 }
 
