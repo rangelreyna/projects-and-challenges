@@ -8,6 +8,7 @@ $secondary_color: hsl(193, 100%, 96%);
 $accent_color: hsl(322, 100%, 66%); 
 $neutral_color: hsl(208, 11%, 55%);
 $page_width: 90%;
+$max_width: 1296px; // 90% of 1440px 
 
 *{
     margin: 0;
@@ -291,6 +292,7 @@ main{
     }
 
     nav{
+        max-width: $max_width;
         .logo{
             width: 200px;
         }
@@ -302,6 +304,7 @@ main{
     }
 
     .jumbo-container{
+        max-width: $max_width;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -343,7 +346,7 @@ main{
         padding-top: 120px;
         padding-bottom: 300px;
         .main-container{
-            max-width: 1400px;
+            max-width: $max_width;
         }
     }
 
@@ -398,6 +401,9 @@ main{
     .footer{
         padding-top: 180px;
         padding-bottom: 60px;
+        .footer-container{
+            max-width: $max_width;
+        }
     }
 
     .logo-container svg{

@@ -312,6 +312,9 @@ main .main-container {
     padding-bottom: 70px;
     background-image: url(../images/bg-hero-desktop.svg);
   }
+  nav {
+    max-width: 1296px;
+  }
   nav .logo {
     width: 200px;
   }
@@ -321,6 +324,7 @@ main .main-container {
     font-size: 0.8rem;
   }
   .jumbo-container {
+    max-width: 1296px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -366,7 +370,7 @@ main .main-container {
     padding-bottom: 300px;
   }
   main .main-container {
-    max-width: 1400px;
+    max-width: 1296px;
   }
   .card {
     margin: 40px 20px;
@@ -423,6 +427,9 @@ main .main-container {
   .footer {
     padding-top: 180px;
     padding-bottom: 60px;
+  }
+  .footer .footer-container {
+    max-width: 1296px;
   }
   .logo-container svg {
     width: 240px;
