@@ -1,4 +1,4 @@
-See my solution [live](https://projects-and-challenges.vercel.app/fylo-landing-page-with-two-column-layout-master/index.html).
+Made with HTML, Sass, and JavaScript. See my solution [live](https://projects-and-challenges.vercel.app/fylo-landing-page-with-two-column-layout-master/index.html).
 
 # Frontend Mentor - Fylo landing page with two column layout
 

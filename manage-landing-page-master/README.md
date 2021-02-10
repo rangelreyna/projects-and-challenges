@@ -1,4 +1,4 @@
-See my solution [live](https://projects-and-challenges.vercel.app/manage-landing-page-master/index.html).
+Made with HTML, Sass, and JavaScript. See my solution [live](https://projects-and-challenges.vercel.app/manage-landing-page-master/index.html).
 
 # Frontend Mentor - Manage landing page
 

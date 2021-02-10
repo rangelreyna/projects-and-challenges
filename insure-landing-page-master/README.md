@@ -1,4 +1,4 @@
-See my solution [live](https://projects-and-challenges.vercel.app/insure-landing-page-master/index.html).
+Made with HTML, Sass, and some JavaScript. See my solution [live](https://projects-and-challenges.vercel.app/insure-landing-page-master/index.html).
 
 # Frontend Mentor - Insure landing page
 

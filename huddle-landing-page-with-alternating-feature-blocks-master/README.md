@@ -1,4 +1,4 @@
-See my solution [live](https://projects-and-challenges.vercel.app/huddle-landing-page-with-alternating-feature-blocks-master/index.html).
+Made with HTML and Sass. See my solution [live](https://projects-and-challenges.vercel.app/huddle-landing-page-with-alternating-feature-blocks-master/index.html).
 
 # Frontend Mentor - Huddle landing page with alternating feature blocks
 

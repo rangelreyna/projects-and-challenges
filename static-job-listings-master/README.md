@@ -1,4 +1,4 @@
-See my solution [live](https://static-job-listings-three.vercel.app/).
+Made with React and Sass. See my solution [live](https://static-job-listings-three.vercel.app/).
 
 # Frontend Mentor - Job Listings Challenge
 

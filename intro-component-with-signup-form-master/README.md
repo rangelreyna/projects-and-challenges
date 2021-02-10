@@ -1,4 +1,4 @@
-See my solution [live](https://projects-and-challenges.vercel.app/intro-component-with-signup-form-master/index.html).
+Made with HTML, Sass, and JavaScript. See my solution [live](https://projects-and-challenges.vercel.app/intro-component-with-signup-form-master/index.html).
 
 # Frontend Mentor - Intro component with sign up form
 

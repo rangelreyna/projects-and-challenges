@@ -1,4 +1,4 @@
-See my solution [live](https://projects-and-challenges.vercel.app/article-preview-component-master/index.html).
+Made with HTML, CSS, and some JavaScript. See my solution [live](https://projects-and-challenges.vercel.app/article-preview-component-master/index.html).
 
 # Frontend Mentor - Article preview component
 

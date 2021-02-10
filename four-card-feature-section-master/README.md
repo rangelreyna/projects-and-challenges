@@ -1,4 +1,4 @@
-See my solution [live](https://projects-and-challenges.vercel.app/four-card-feature-section-master/index.html).
+Made with HTML and CSS. See my solution [live](https://projects-and-challenges.vercel.app/four-card-feature-section-master/index.html).
 
 # Frontend Mentor - Four card feature section
 

@@ -1,4 +1,4 @@
-See my solution [live](https://projects-and-challenges.vercel.app/social-proof-section-master/index.html).
+Made with HTML and Sass. See my solution [live](https://projects-and-challenges.vercel.app/social-proof-section-master/index.html).
 
 # Frontend Mentor - Social proof section
 

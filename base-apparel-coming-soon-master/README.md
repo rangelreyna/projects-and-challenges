@@ -1,4 +1,4 @@
-See my solution [live](https://projects-and-challenges.vercel.app/base-apparel-coming-soon-master/index.html).
+Made with HTML, Sass, and JavaScript. See my solution [live](https://projects-and-challenges.vercel.app/base-apparel-coming-soon-master/index.html).
 
 # Frontend Mentor - Base Apparel coming soon page
 
