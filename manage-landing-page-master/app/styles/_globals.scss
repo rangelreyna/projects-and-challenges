@@ -35,9 +35,9 @@ p{
 }
 
 .container{ 
-    width: 87%;
+    width: $mobile_width;
+    max-width: $max_width;
     margin: 0 auto;
-    max-width: 1300px;
 }
 
 button{ 
@@ -75,6 +75,6 @@ button{
 // Desktop Media Query 
 @media only screen and (min-width: 1300px){ 
     .container{
-        width: 78%;
+        width: $desktop_width;
     }
 }

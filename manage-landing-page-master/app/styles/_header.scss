@@ -1,12 +1,13 @@
 
 .header{
-    position: relative;
 
     &::before{ 
         position: absolute;
         content: '';
-        width: 315px;
-        height: 330px;
+        width: 84%; 
+        max-width: 450px;
+        height: 88vw; 
+        max-height: 400px;
         top: 0;
         right: 0;
         background-image: url(../../images/bg-tablet-pattern.svg);
@@ -94,9 +95,13 @@
 @media only screen and (min-width: $breakpoint){
     .header{
         &::before{ 
-            width: 670px;
-            height: 665px;
-            background-size: 120%;
+            max-width: unset; 
+            max-height: unset;
+            width: 810px; 
+            height: 640px; 
+            left: 50%;
+            background-size: 750px;
+            background-position: 50px bottom;
         }
 
         .container{

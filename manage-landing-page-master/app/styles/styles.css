@@ -37,8 +37,8 @@ p {
 
 .container {
   width: 87%;
+  max-width: calc(1440px * .78);
   margin: 0 auto;
-  max-width: 1300px;
 }
 
 button {
@@ -82,15 +82,13 @@ button:hover {
   }
 }
 
-.header {
-  position: relative;
-}
-
 .header::before {
   position: absolute;
   content: '';
-  width: 315px;
-  height: 330px;
+  width: 84%;
+  max-width: 450px;
+  height: 88vw;
+  max-height: 400px;
   top: 0;
   right: 0;
   background-image: url(../../images/bg-tablet-pattern.svg);
@@ -184,9 +182,13 @@ button:hover {
 
 @media only screen and (min-width: 975px) {
   .header::before {
-    width: 670px;
-    height: 665px;
-    background-size: 120%;
+    max-width: unset;
+    max-height: unset;
+    width: 810px;
+    height: 640px;
+    left: 50%;
+    background-size: 750px;
+    background-position: 50px bottom;
   }
   .header .container {
     padding: 60px 0;
@@ -399,12 +401,12 @@ button:hover {
     display: flex;
   }
   .features::before {
-    width: 300px;
-    height: 650px;
+    width: 730px;
+    height: 730px;
     top: unset;
-    right: unset;
-    bottom: -270px;
-    left: -14.1%;
+    right: 87%;
+    bottom: -350px;
+    background-size: 720px;
     background-position: right top;
   }
   .features__intro {
