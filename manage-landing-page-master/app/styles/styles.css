@@ -587,12 +587,13 @@ button:hover {
 
 .testimonials button {
   margin-top: 45px;
+  margin-bottom: 30px;
 }
 
-@media only screen and (min-width: 975px) {
+@media only screen and (min-width: 750px) {
   .testimonials {
     width: 540px;
-    margin-bottom: 180px;
+    margin-bottom: 70px;
     overflow-x: unset;
   }
   .testimonials h3 {
@@ -623,6 +624,12 @@ button:hover {
   }
   .testimonials .slider-dot:not(:last-child) {
     margin-right: 7px;
+  }
+}
+
+@media only screen and (min-width: 975px) {
+  .testimonials {
+    margin-bottom: 150px;
   }
 }
 

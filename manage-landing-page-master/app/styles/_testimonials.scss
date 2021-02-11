@@ -105,15 +105,16 @@
 
     button{
         margin-top: 45px;
+        margin-bottom: 30px;
     }
 
 }
 
-// Desktop Media Query 
-@media only screen and (min-width: $breakpoint){
+// Tablet Media Query 
+@media only screen and (min-width: 750px){
     .testimonials{
         width: 540px; 
-        margin-bottom: 180px;
+        margin-bottom: 70px;
         overflow-x: unset; 
     
         h3{
@@ -149,5 +150,12 @@
                 margin-right: 7px;
             }
         }
+    }
+}
+
+// Desktop Media Query 
+@media only screen and (min-width: $breakpoint){
+    .testimonials{
+        margin-bottom: 150px;
     }
 }
