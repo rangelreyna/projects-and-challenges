@@ -152,6 +152,7 @@ header::before {
   height: 50px;
   bottom: 0px;
   background-image: url(../images/bg-curve-mobile.svg);
+  background-attachment: scroll;
   background-repeat: no-repeat;
   background-size: 100vw 50px;
 }
