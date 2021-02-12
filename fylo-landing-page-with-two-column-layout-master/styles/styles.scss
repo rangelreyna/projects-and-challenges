@@ -140,7 +140,7 @@ header{
         bottom: 0px;
         background-image: url(../images/bg-curve-mobile.svg);
         background-repeat: no-repeat;
-        background-size: 100% 50px;
+        background-size: 100vw 50px;
     }
 }
 
@@ -471,7 +471,7 @@ main{
         &::before{
             height: 110px;
             background-image: url(../images/bg-curve-desktop.svg);
-            background-size: 100% 110px;
+            background-size: 100vw 110px;
         }
     }
 
