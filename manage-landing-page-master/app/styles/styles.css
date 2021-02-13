@@ -535,6 +535,7 @@ button:hover {
   border-radius: 2px;
   -webkit-transition: opacity 0.5s;
   transition: opacity 0.5s;
+  opacity: 0.4;
 }
 
 .testimonials .slider-button.prev-button {
@@ -551,7 +552,7 @@ button:hover {
 
 .testimonials .slider-button:hover {
   cursor: pointer;
-  opacity: 0.4;
+  opacity: 1;
 }
 
 .testimonials .slider-dots-wrapper {
