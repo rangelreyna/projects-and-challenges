@@ -269,6 +269,12 @@ button:hover {
   display: none;
 }
 
+@media only screen and (min-width: 600px) {
+  .hero__mobile-img {
+    height: 650px;
+  }
+}
+
 @media only screen and (min-width: 900px) {
   .hero__mobile-img {
     display: none;

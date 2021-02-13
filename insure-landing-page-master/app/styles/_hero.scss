@@ -77,6 +77,13 @@
 
 }
 
+// Tablet Media Query 
+@media only screen and (min-width: 600px){
+    .hero__mobile-img{
+        height: 650px;
+    }
+}
+
 // Desktop Media Query 
 @media only screen and (min-width: $breakpoint){
     .hero{
