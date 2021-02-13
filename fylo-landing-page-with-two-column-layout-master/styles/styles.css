@@ -154,7 +154,7 @@ header::before {
   background-image: url(../images/bg-curve-mobile.svg);
   background-attachment: scroll;
   background-repeat: no-repeat;
-  background-size: 100vw 50px;
+  background-size: 100% 100%;
 }
 
 .header-section {
@@ -529,7 +529,7 @@ main .main-container .main-img {
   header::before {
     height: 110px;
     background-image: url(../images/bg-curve-desktop.svg);
-    background-size: 100vw 110px;
+    background-size: 100% 100%;
   }
   .header-section {
     padding-right: 45px;
